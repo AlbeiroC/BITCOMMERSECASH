@@ -1,39 +1,9 @@
-/*FUENTES*/
-@font-face{
-    font-family: "TrebuchetMS";
-    src: url(fonts/TrebuchetMS.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
+@import './app.css';
 
-@font-face{
-    font-family: "BebasNeue";
-    src: url(fonts/BebasNeue.otf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face{
-    font-family: "webSymbolsRegular";
-    src: url(fonts/websymbols-regular-webfont.eot);
-    src: url(fonts/websymbols-regular-webfont.eot?#iefix) format(embedded-opentype),
-        url(fonts/websymbols-regular-webfont.woff) format(woff),
-        url(fonts/websymbols-regular-webfont.ttf) format(truetype),
-        url(fonts/websymbols-regular-webfont.svg#webSymbolsRegular) format(svg);  
-    font-weight: normal;
-    font-style: normal;
-}
 
 /*GENERALES*/
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
 
-body{
-    background-color: #010013;
-}
 
 .wrap{
     width: 1200px;
@@ -125,28 +95,6 @@ body{
     text-align: center;
 }
 
-#tasas #tasa input[type="text"],
-#tasas #calculadora input[type="text"],
-#tasas #calculadora input[type="button"]{
-    width: 200px;
-    height: 30px;
-    margin: 10px;
-    margin-top: 80px;
-    background-color: #2C2C3F ;
-    box-shadow: 1px 1px 2px #52C537;
-    border: transparent;
-    outline: none;
-    border-radius: 5px;
-    text-align: center;
-    color: #8A8A94;
-    transition: all 300ms;
-}
-
-#tasas #tasa input[type="text"]:focus,
-#tasas #calculadora input[type="text"]:focus,
-#tasas #calculadora input[type="button"]:hover{
-    border: 1px solid #52C537;
-}
 
 #tasas #tasa h1{
     padding: 10px;
@@ -181,7 +129,6 @@ body{
     width: 200px;
     margin: 10px;
     margin-top: 30px;
-    line-height: 500px;
 }
 
 #tasas #calculadora h1{
@@ -192,61 +139,27 @@ body{
     text-align: center;
 }
 
-#tasas #calculadora input[type="button"]{
-    margin-top: 20px;
-    background-color: #52C537;
-    color: #FFFFFF;
-}
-
 /*SECCION BITCOIN*/
 
 #Bitcoin{
     width: 100%;
     height: 600px;
+    padding-top: 50px;
     margin: 0px auto;
     background-color: #FFFFFF;
     font-family: "TrebuchetMS", Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: black;
+    position: relative;
 }
-
-#Bitcoin #titulo h1,h2{
-    width: 100%;
+#Bitcoin::after{
+    content: '';
+    position: absolute;
+    width: 100px;
     height: 100px;
-    text-align: center;
-    color: #52C537;
-    font-family: "BebasNeue";
-    font-size: 40px;
-    line-height: 100px;
+    left: calc(50% - 50px);
+    top: -50px;
+    background: url(../img/logobitcoin.png) no-repeat center / contain;
 }
 
-#Bitcoin #bitcoin{
-    width: 100%;
-    padding: 20px;
-}
-
-#Bitcoin #bitcoin h2{
-    float: left;
-    text-align: left;
-    font-size: 30px;
-}
-
-#Bitcoin #bitcoin p{
-    overflow: hidden;
-    width: 60%;
-    padding-right: 20px;
-    float: left;
-    text-align: left;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-
-#Bitcoin #bitcoin img{
-    display: block;
-    float: left;
-    width: 80px;
-    margin-top: -260px;
-    margin-left: -195px;
-}
 

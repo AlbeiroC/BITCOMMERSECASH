@@ -23,8 +23,8 @@
                     <li><a href="#">Tasas</a></li>
                     <li><a href="#">Bitcoin</a></li>
                     <li><a href="#">Redes Sociales</a></li>
-                    <li><input type="button" value="INGRESO"></li>
-                    <li><input type="button" value="REGISTRO"></li>
+                    <li><button type="button" class="button w-auto">INGRESO</button></li>
+                    <li><button type="button" class="button w-auto">REGISTRO</button></li>
                 </ul>
             </nav>
         </div>
@@ -35,37 +35,66 @@
     <section class="wrap">
         <section id="tasas">
             <div id="tasa">
-                <input type="text" value="Pais" />
-                <input type="text" value="Pais" />
+                <input type="text" class="input" value="COLOMBIA" />
+                <input type="text" class="input" value="VENEZUELA" />
                 <h1>0.02</h1>
-                <p>Por cada 1cop recibiras 200.000ves</p>
+                <p>Por cada 1COP recibiras 200.000VES</p>
             </div>
             <div id="calculadora">
                 <p id="parrafo_1">Esta calculadora te ayudara a saber cuanto dinero recibiras al cambio.</p>
-                <input type="text" />
+                <input type="text" class="input" value="100.000COP"/>
                 <h1>=</h1>
-                <input type="text" />
-                <p id=parrafo_2>Si envias $$$$ recibiras $$$$</p>
-                <input type="button" value="Tranferir">
+                <input type="text" class="input" value="20'000.000VES" /><br/>
+                <button class="button">Transferir</button>
+                <button class="button">Cancelar</button>
             </div>
         </section>
     </section>
     <!--Inicio Seccion Tasas-->
     <!--Inicio Seccion Bitcoin-->
+
     <section id="Bitcoin">
+        <div class="wrap">
+            <h1 class="title">comercio bitcoin</h1>
+            <div class="box">
+                <div class="left">
+                    <h2>¿Que es Bitcoin?</h2>
+                    <p>
+                        Bitcoin usa tecnología peer-to-peer o entre pares para operar sin una autoridad
+                        central o bancos; la gestión de las transacciones y la emisión de bitcoins es llevada a cabo de
+                        forma colectiva por la red. Bitcoin es de código abierto; su diseño es público, nadie es dueño o
+                        controla Bitcoin y todo el mundo puede participar. Por medio de sus muchas propiedades únicas,
+                        Bitcoin permite usos interesantes no contemplados por ningún sistema de pagos anterior.
+                    </p>
+                </div>
+                <div class="right">
+                    <input type="text" value="COLOMBIA" class="input"/>
+                    <h2>32'543.000cop</h2>
+                    <p>¡Que monto deseas comprar?</p>
+                    <input id="calculadora_1" class="input" type="text" value="2'746.000COP">
+                    <input id="calculadora_1" class="input" type="text" value="0.0005687BTC">
+                    <button class="button">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Bitcoin_" style="display: none;">
         <section class="wrap">
             <div id="titulo">
                 <h1>COMERCIO BITCOIN
                 </h1>
             </div>
-            <div id="bitcoin">
-                <h2>¿Que es Bitcoin?</h2>
-                <p id="parrafo_1">Bitcoin usa tecnología peer-to-peer o entre pares para operar sin una autoridad
-                    central o bancos; la gestión de las transacciones y la emisión de bitcoins es llevada a cabo de
-                    forma colectiva por la red. Bitcoin es de código abierto; su diseño es público, nadie es dueño o
-                    controla Bitcoin y todo el mundo puede participar. Por medio de sus muchas propiedades únicas,
-                    Bitcoin permite usos interesantes no contemplados por ningún sistema de pagos anterior.</p>
-                <img src="./img/logobitcoin.png" alt="bitcoin">
+            <div>
+                <p>
+                <h2>¿Que es Bitcoin?</h2><br />
+                Bitcoin usa tecnología peer-to-peer o entre pares para operar sin una autoridad
+                central o bancos; la gestión de las transacciones y la emisión de bitcoins es llevada a cabo de
+                forma colectiva por la red. Bitcoin es de código abierto; su diseño es público, nadie es dueño o
+                controla Bitcoin y todo el mundo puede participar. Por medio de sus muchas propiedades únicas,
+                Bitcoin permite usos interesantes no contemplados por ningún sistema de pagos anterior.
+                </p>
             </div>
             <div id="comercio">
                 <P>Deseo<input type="text" value="COMPRAR">en el pais<input type="text" value="venezuela"></P>
