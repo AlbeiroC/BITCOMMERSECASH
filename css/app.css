@@ -82,11 +82,9 @@ body{
 
 /*Section Bitcoin*/
 
-
 .title{
     margin-top: 20px;
     text-align: center;
-    color: #010013;
     font-family: "BebasNeue";
     font-size: 60px;
   }
@@ -136,15 +134,26 @@ body{
     border-radius: 10px;
 }
 
-.right input,h2{
+.right input{
     margin-top: 20px;
     float: left;
     width: 47%;
     text-align: center;
 } 
 
+.precio_btc{
+    width: 100%;
+    height: 80px;
+}
+
+.precio_btc input{
+    margin-bottom: 10px;
+}
+
 .right h2{
+    float: right;
     margin-top: 15px;
+    margin-right: 10px;
     color: #52C537;
     font-family: "BebasNeue";
     font-size: 40px;
@@ -152,7 +161,7 @@ body{
 
 .right p{
     width: 100%;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
@@ -160,3 +169,111 @@ body{
     margin-left: 135px;
     margin-top: 10px;
 }
+
+/*REDES SOCIALES*/
+.redes{
+    width: 100%;
+    height: 150px;
+}
+
+.redes .wrap{
+    height: 150px;
+    border-bottom: 1px solid #52C537;
+}
+
+.tarjetas_redes{
+    float: left;
+    overflow: hidden;
+    width: 30%;
+    height: 100px;
+    margin:20px;
+    text-align: center;
+}
+
+.redes img{
+    width: 50px;
+    margin-top: 30px;
+    transition: all 300ms;
+}
+
+.redes img:hover{
+    box-shadow: 0 0 30px #52C537;
+    border-radius: 30px;
+}
+
+
+/*FOOTER*/
+.footer{
+    width: 100%;
+    height: 300px;
+    color: #FFFFFF;
+}
+
+.tarjetas_footer{
+    float: right;
+    width: 15%;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.subtitulos_footer{
+    width: 100%;
+    font-family: "TrebuchetMS";
+    font-size: 20px;
+    list-style:none;
+}
+
+#QR{
+    float: left;
+    width: 30%;
+}
+
+#QR a{
+    float: left;
+    margin-left: -20px;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: all 300ms;
+}
+
+#QR a:hover{
+    color: #52C537;
+}
+
+.qr{
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    margin-left: -20px;
+}
+
+.lista_footer{
+    margin-top: 20px;
+    list-style:none;
+}
+
+.lista_footer li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lista_footer a{
+    font-family: "TrebuchetMS";
+    font-size: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: all 300ms;
+}
+
+.lista_footer a:hover{
+    color: #52C537;
+}
+

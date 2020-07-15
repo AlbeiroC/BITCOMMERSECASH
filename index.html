@@ -12,13 +12,13 @@
     <!--Cabecera-->
     <header id="header">
         <div class="wrap">
-            <div id="logotipo">
+            <div class="logo_bitsend">
                 <a href="#">
-                    <img src="img/logobitsend.png" alt="Bitsend Company" />
-                    <h3>Bitsend Company</h3>
+                    <img class="img_logo" src="img/logobitsend.png" alt="Bitsend Company" />
                 </a>
+                <h1>Bitsend Company</h1>
             </div>
-            <nav id="menu">
+            <nav class="navegar">
                 <ul>
                     <li><a href="#">Tasas</a></li>
                     <li><a href="#">Bitcoin</a></li>
@@ -42,17 +42,17 @@
             </div>
             <div id="calculadora">
                 <p id="parrafo_1">Esta calculadora te ayudara a saber cuanto dinero recibiras al cambio.</p>
-                <input type="text" class="input" value="100.000COP"/>
+                <input type="text" class="input" value="100.000COP" />
                 <h1>=</h1>
-                <input type="text" class="input" value="20'000.000VES" /><br/>
+                <input type="text" class="input" value="20'000.000VES" /><br />
                 <button class="button">Transferir</button>
                 <button class="button">Cancelar</button>
             </div>
         </section>
     </section>
     <!--Inicio Seccion Tasas-->
-    <!--Inicio Seccion Bitcoin-->
 
+    <!--Inicio Seccion Bitcoin-->
     <section id="Bitcoin">
         <div class="wrap">
             <h1 class="title">comercio bitcoin</h1>
@@ -68,8 +68,10 @@
                     </p>
                 </div>
                 <div class="right">
-                    <input type="text" value="COLOMBIA" class="input"/>
-                    <h2>32'543.000cop</h2>
+                    <div class="precio_btc">
+                        <input type="text" value="COLOMBIA" class="input" />
+                        <h2>32'543.000cop</h2>
+                    </div>
                     <p>¡Que monto deseas comprar?</p>
                     <input id="calculadora_1" class="input" type="text" value="2'746.000COP">
                     <input id="calculadora_1" class="input" type="text" value="0.0005687BTC">
@@ -79,29 +81,58 @@
         </div>
     </section>
 
+    <!--Redes Sociales-->
 
-    <section id="Bitcoin_" style="display: none;">
-        <section class="wrap">
-            <div id="titulo">
-                <h1>COMERCIO BITCOIN
-                </h1>
+    <section class="redes">
+        <div class="wrap">
+            <div class="caja_redes">
+                <div class="tarjetas_redes">
+                    <a href="https://www.instagram.com/bitsendcompany/" target="_blank"><img src="./img/logo_inst.png" alt="instagram" /></a>
+                </div>
+                <div class="tarjetas_redes">
+                    <a href="https://www.facebook.com/Bitsendcompany/" target="_blank"><img src="./img/logo_face.png" alt="facebook" /></a>
+                </div>
+                <div class="tarjetas_redes">
+                    <a href="https://t.me/bitsendcompany" target="_blank"><img src="./img/logo_telegram.png" alt="telegram" /></a>
+                </div>
             </div>
-            <div>
-                <p>
-                <h2>¿Que es Bitcoin?</h2><br />
-                Bitcoin usa tecnología peer-to-peer o entre pares para operar sin una autoridad
-                central o bancos; la gestión de las transacciones y la emisión de bitcoins es llevada a cabo de
-                forma colectiva por la red. Bitcoin es de código abierto; su diseño es público, nadie es dueño o
-                controla Bitcoin y todo el mundo puede participar. Por medio de sus muchas propiedades únicas,
-                Bitcoin permite usos interesantes no contemplados por ningún sistema de pagos anterior.
-                </p>
-            </div>
-            <div id="comercio">
-                <P>Deseo<input type="text" value="COMPRAR">en el pais<input type="text" value="venezuela"></P>
+            <div />
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <section>
+            <div class="wrap">
+                <div id="QR" class="tarjetas_footer">
+                    <a href="#">BITSENDCOMPANY.COM</a>
+                    <img class="qr" src="./img/qr_bitsend.jpeg" alt="">
+                </div>
+                <div id="acerca_de" class="tarjetas_footer">
+                    <h2 class="subtitulos_footer">SOPORTE</h2>
+                    <ul class="lista_footer">
+                        <li><a href="#">Contactanos</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Guia</a></li>
+                    </ul>
+                </div>
+                <div id="soporte" class="tarjetas_footer">
+                    <h2 class="subtitulos_footer">ACERCA DE</h2>
+                    <ul class="lista_footer">
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Horarios</a></li>
+                    </ul>
+                </div>
+                <div id="servicios" class="tarjetas_footer">
+                    <h2 class="subtitulos_footer">SERVICIOS</h2>
+                    <ul class="lista_footer">
+                        <li><a href="#">Panel</a></li>
+                        <li><a href="#">Transferencia</a></li>
+                        <li><a href="#">Bitcoin</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
-    </section>
-    <!--Inicio Seccion Tasas-->
+    </footer>
 </body>
 
 </html>

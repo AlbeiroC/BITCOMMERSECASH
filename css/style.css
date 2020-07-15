@@ -17,56 +17,47 @@
     color: #FFFFFF;
 }
 
-#logotipo{
-    display: block;
+.logo_bitsend{
     float: left;
-    cursor: pointer;
-    width: 270px;
-    height: 100px;
-    line-height: 100px;
-}
-
-#logotipo a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-#logotipo img{
-    display: block;
-    float: left;
-    width: 80px;
+    width: 400px;
     margin-top: 10px;
 }
 
-#logotipo h3{
-    display: block;
+
+.logo_bitsend h1{
+    margin: 20px;
+    margin-right: 40px;
+    width: 65%;
     float: right;
-    margin-left: 10px;
-    font-family: "BebasNeue", Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-family: "BebasNeue";
+    font-size: 40px;
 }
 
-#menu{
+.img_logo{
+    width: 80px;
+}
+
+.navegar{
     display: block;
     float: right;
 }
 
-#menu ul li{
+.navegar ul li{
     display: block;
     float: left;
     margin-left: 20px;
     font-family: "TrebuchetMS", Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     line-height: 100px;
 }
 
-#menu ul li a{
+.navegar ul li a{
     text-decoration: none;
     color: #FFFFFF;
 }
 
-#menu ul li input[type=button]{
+.navegar ul li input[type=button]{
     width: 70px;
     height: 30px;
     border: none;
