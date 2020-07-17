@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitsend Company</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
@@ -20,12 +20,14 @@
             </div>
             <nav class="navegar">
                 <ul>
-                    <li><a href="#">Tasas</a></li>
-                    <li><a href="#">Bitcoin</a></li>
                     <li><a href="#">Redes Sociales</a></li>
-                    <li><button type="button" class="button w-auto">INGRESO</button></li>
-                    <li><button type="button" class="button w-auto">REGISTRO</button></li>
+                    <li><a href="#">Bitcoin</a></li>
+                    <li><a href="#">Tasas</a></li>
                 </ul>
+                <h3 class="button_login">
+                    <a href="login.html" class="login">LOGIN</a>
+                </h3>
+                <button type="button" class="button" id="button_register">REGISTER</button>
             </nav>
         </div>
     </header>
@@ -34,19 +36,22 @@
     <!--Inicio Seccion Tasas-->
     <section class="wrap">
         <section id="tasas">
-            <div id="tasa">
+            <div class="tasa">
                 <input type="text" class="input" value="COLOMBIA" />
                 <input type="text" class="input" value="VENEZUELA" />
                 <h1>0.02</h1>
-                <p>Por cada 1COP recibiras 200.000VES</p>
+                <p class="parrafo_tasa" id="p_1">Por cada 1COP recibiras 200.000VES</p>
             </div>
-            <div id="calculadora">
-                <p id="parrafo_1">Esta calculadora te ayudara a saber cuanto dinero recibiras al cambio.</p>
+            <div class="calculadora">
+                <p class="parrafo_tasa" id="p_2">Esta calculadora te ayudara a saber cuanto dinero recibiras al cambio.
+                </p>
                 <input type="text" class="input" value="100.000COP" />
-                <h1>=</h1>
-                <input type="text" class="input" value="20'000.000VES" /><br />
+                <p class="parrafo_tasa" id="p_3"> = </p>
+                <input type="text" class="input" value="20'000.000VES" />
+                <div class="buttons_calculadora">
                 <button class="button">Transferir</button>
                 <button class="button">Cancelar</button>
+                </div>
             </div>
         </section>
     </section>
@@ -73,8 +78,10 @@
                         <h2>32'543.000cop</h2>
                     </div>
                     <p>¡Que monto deseas comprar?</p>
-                    <input id="calculadora_1" class="input" type="text" value="2'746.000COP">
-                    <input id="calculadora_1" class="input" type="text" value="0.0005687BTC">
+                    <div class="input_bitcoin">
+                    <input class="input" type="text" value="2'746.000COP">
+                    <input class="input" type="text" value="0.0005687BTC">
+                    </div>
                     <button class="button">COMPRAR</button>
                 </div>
             </div>
@@ -82,22 +89,29 @@
     </section>
 
     <!--Redes Sociales-->
-
     <section class="redes">
         <div class="wrap">
             <div class="caja_redes">
                 <div class="tarjetas_redes">
-                    <a href="https://www.instagram.com/bitsendcompany/" target="_blank"><img src="./img/logo_inst.png" alt="instagram" /></a>
+                    <a href="https://www.instagram.com/bitsendcompany/" target="_blank"><img src="./img/logo_inst.png"
+                            alt="instagram" /></a>
                 </div>
                 <div class="tarjetas_redes">
-                    <a href="https://www.facebook.com/Bitsendcompany/" target="_blank"><img src="./img/logo_face.png" alt="facebook" /></a>
+                    <a href="https://www.facebook.com/Bitsendcompany/" target="_blank"><img src="./img/logo_face.png"
+                            alt="facebook" /></a>
                 </div>
                 <div class="tarjetas_redes">
-                    <a href="https://t.me/bitsendcompany" target="_blank"><img src="./img/logo_telegram.png" alt="telegram" /></a>
+                    <a href="https://t.me/bitsendcompany" target="_blank"><img src="./img/logo_telegram.png"
+                            alt="telegram" /></a>
+                </div>
+                <div class="tarjetas_redes">
+                    <a href="https://wa.me/573143133600?text=Hola%20Necesito%20mas%20informacion,%20Por%20favor."
+                        target="_blank"><img src="./img/logo_whatsapp.png" alt="whatsapp" /></a>
                 </div>
             </div>
             <div />
     </section>
+    <!--Fin redes Sociales-->
 
     <!--Footer-->
     <footer class="footer">

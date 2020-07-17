@@ -1,3 +1,5 @@
+@import './home.css';
+
 /* Fuentes */
 @font-face{
     font-family: "TrebuchetMS";
@@ -24,8 +26,7 @@
     font-style: normal;
 }
 
-
-
+/*GENERALES*/
 *{
     margin: 0px;
     padding: 0px;
@@ -33,141 +34,131 @@
 
 body{
     background-color: #010013;
+    font-family: "TrebuchetMS";
+    font-size: 20px;
 }
 
+
+.wrap{
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.input{
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    background-color: transparent ;
+    border: 0.5px solid #02FD17;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #02FD17;
+    outline: none;
+    transition: all 300ms;
+}
+
+.button{
+    width: 100px;
+    height: 40px;
+    background-color: #02FD17;
+    color: white;
+    border-radius: 10px;
+    font-family: "BebasNeue";
+    font-size: 15px;
+    border: 1px solid #02FD17;
+}
+
+.button:active{
+    background: linear-gradient( #3c9728, #52C537 );
+    transform: translateY(1px);
+}
+
+.input:hover,
+.input:focus{
+    border: solid 1.5px #02FD17;
+    background-color:#02FD17;
+    color: #010013;
+}
+
+.input:active{
+    color: #02FD17;
+}
+
+/*CABECERA*/
 #header{
     width: 100%;
     height: 100px;
     color: #FFFFFF;
 }
 
-.input,.button{
-    width: 200px;
-    height: 30px;
-    margin: 10px;
-    margin-top: 80px;
-    background-color: transparent ;
-    border: 0.5px solid #52C537;
-    outline: none;
-    border-radius: 5px;
+.logo_bitsend{
+    float: left;
+    width: 35%;
+    margin-top: 10px;
+}
+
+.logo_bitsend h1{
+    margin: 20px;
+    margin-right: 40px;
+    width: 65%;
+    float: right;
+    font-family: "BebasNeue";
+    font-size: 40px;
+}
+
+.img_logo{
+    width: 80px;
+}
+
+.navegar{
+    float: right;
+    width: 65%;
+}
+
+.navegar ul{
+    width: 79%;
+    float: left;
+    text-align: right;
+}
+
+.navegar ul li{
+    list-style:none;
+    float: right;
+    margin-left: 10px;
+    margin-right: 15px;
+    font-family: "TrebuchetMS", Arial, Helvetica, sans-serif;
+    font-size: 20px;
     text-align: center;
-    color: #52C537;
+    line-height: 100px;
+}
+
+.navegar ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
     transition: all 300ms;
 }
-.button{
-    margin-top: 20px;
-    padding-left:4px;
-    padding-right:4px;
-    background: linear-gradient( #52C537, #3c9728 );
-    color: #FFFFFF;
-}
-.button:active{
-    background: linear-gradient( #3c9728, #52C537 );
-    transform: translateY(1px);
-}
-.input:hover,
-.input:focus{
-    border: solid 1.5px #52C537;
-    background-color:#52C537;
-    color: #010013;
-}
 
-.input:active{
-    color: #52C537;
-}
-
-.w-auto{
-    width: auto;
-}
-
-/*Section Bitcoin*/
-
-.title{
-    margin-top: 20px;
-    text-align: center;
-    font-family: "BebasNeue";
-    font-size: 60px;
-  }
-
-.box{
-    width: 100%;
-    height: 550px;
-    display: inline-block;
-    font-family: "TrebuchetMS";
-    font-size: 20px;
-}
-
-.left{
+.button_login{
     float: left;
-    width: 43%;
-    overflow: hidden;
-    padding: 20px;
-    margin: 20px;
-    margin-top: 50px;
+    width: 5%;
+    text-align: right;
+    line-height: 100px;
 }
 
-.left h2{
-    width: 100%;
-    margin: 30px;
-    margin-left: 0px;
-    font-size: 40px;
+.login{
+    color: #02FD17;    
+    text-decoration: none;
+    font-size: 25px;
     font-family: "BebasNeue";
-    text-align: left;
 }
 
-.left p{
-    text-align: left;
-    letter-spacing: 1px;
-}
-
-.right{
-    float: right;
-    width: 43%;
-    height: 310px;
-    padding: 10px;
-    margin: 20px;
-    margin-top: 85px;
-    background-color: #010013;
+#button_register{
+    float: left;
+    margin: 10px;
+    margin-top: 30px;
     color: white;
-    text-align: center;
-    border: 1px solid #52C537;
-    border-radius: 10px;
-}
-
-.right input{
-    margin-top: 20px;
-    float: left;
-    width: 47%;
-    text-align: center;
-} 
-
-.precio_btc{
-    width: 100%;
-    height: 80px;
-}
-
-.precio_btc input{
-    margin-bottom: 10px;
-}
-
-.right h2{
-    float: right;
-    margin-top: 15px;
-    margin-right: 10px;
-    color: #52C537;
-    font-family: "BebasNeue";
-    font-size: 40px;
-}
-
-.right p{
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-.right #calculadora_1 {
-    margin-left: 135px;
-    margin-top: 10px;
+    font-size: 25px;
 }
 
 /*REDES SOCIALES*/
@@ -178,13 +169,13 @@ body{
 
 .redes .wrap{
     height: 150px;
-    border-bottom: 1px solid #52C537;
+    border-bottom: 1px solid #02FD17;
 }
 
 .tarjetas_redes{
     float: left;
     overflow: hidden;
-    width: 30%;
+    width: 20%;
     height: 100px;
     margin:20px;
     text-align: center;
@@ -197,10 +188,9 @@ body{
 }
 
 .redes img:hover{
-    box-shadow: 0 0 30px #52C537;
+    box-shadow: 0 0 30px #02FD17;
     border-radius: 30px;
 }
-
 
 /*FOOTER*/
 .footer{
@@ -245,7 +235,7 @@ body{
 }
 
 #QR a:hover{
-    color: #52C537;
+    color: #02FD17;
 }
 
 .qr{
@@ -273,7 +263,10 @@ body{
     transition: all 300ms;
 }
 
-.lista_footer a:hover{
-    color: #52C537;
+.lista_footer a:hover,
+.navegar a:hover{
+    color: #02FD17;
 }
+
+
 
