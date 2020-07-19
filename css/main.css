@@ -33,7 +33,7 @@
 }
 
 body{
-    background-color: #010013;
+    background-color: #25333D;
     font-family: "TrebuchetMS";
     font-size: 20px;
 }
@@ -62,7 +62,7 @@ body{
     width: 100px;
     height: 40px;
     background-color: #02FD17;
-    color: white;
+    color:#25333D;
     border-radius: 10px;
     font-family: "BebasNeue";
     font-size: 15px;
@@ -78,7 +78,7 @@ body{
 .input:focus{
     border: solid 1.5px #02FD17;
     background-color:#02FD17;
-    color: #010013;
+    color: #25333D;
 }
 
 .input:active{
@@ -157,7 +157,6 @@ body{
     float: left;
     margin: 10px;
     margin-top: 30px;
-    color: white;
     font-size: 25px;
 }
 
@@ -175,7 +174,7 @@ body{
 .tarjetas_redes{
     float: left;
     overflow: hidden;
-    width: 20%;
+    width: 21%;
     height: 100px;
     margin:20px;
     text-align: center;
