@@ -95,6 +95,15 @@ a.button.is-outlined:hover
 .button.is-outlined,
 a.button.is-outlined
 { color: #02FD17; background: transparent; }
+.has-icon{
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+.has-icon > .icon{ position: absolute !important; left: 0.5rem !important; }
+.has-icon > input{ margin: 0; padding-left: 2rem !important; }
+
+
 /* BUTTON & INPUT */
 
 
