@@ -5,123 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitsend Company</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 
 <body>
     <!--Cabecera-->
-    <header id="header">
-        <div class="wrap">
-            <div class="logo_bitsend">
-                <a href="#">
-                    <img class="img_logo" src="img/logobitsend.png" alt="Bitsend Company" />
-                </a>
-                <h1>Bitsend Company</h1>
-            </div>
-            <nav class="navegar">
-                <ul>
-                    <li><a href="#">Redes Sociales</a></li>
-                    <li><a href="#">Bitcoin</a></li>
-                    <li><a href="#">Tasas</a></li>
-                </ul>
-                <h3 class="button_login">
-                    <a href="login.html" class="login">LOGIN</a>
-                </h3>
-                <button type="button" class="button" id="button_register">REGISTER</button>
-            </nav>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logobitsend.png" style="max-width: 50px;">
+            <h1>Bitsend Company</h1>
+        </a>
+        <div class="menu-right">
+            <ul class="is-list">
+                <li class="li_header"><a href="#">Tasas</a></li>
+                <li class="li_header"><a href="#">Bitcoin</a></li>
+                <li class="li_header"><a href="#">Redes Sociales</a></li>
+                <li class="li_login"><a href="./html/login.html" class="button is-outlined button_login">Login</a></li>
+                <li class="li_register"><a href="#" class="button button_register button_register">REGISTRO</a></li>
+            </ul>
         </div>
     </header>
     <!--Fin cabecera-->
-
     <!--Inicio Seccion Tasas-->
-    <section class="wrap">
-        <section id="tasas">
-            <div class="tasa">
-                <input type="text" class="input" value="COLOMBIA" />
-                <input type="text" class="input" value="VENEZUELA" />
-                <h1>0.02</h1>
-                <p class="parrafo_tasa" id="p_1">Por cada 1COP recibiras 200.000VES</p>
-            </div>
-            <div class="calculadora">
-                <p class="parrafo_tasa" id="p_2">Esta calculadora te ayudara a saber cuanto dinero recibiras al cambio.
-                </p>
-                <input type="text" class="input" value="100.000COP" />
-                <p class="parrafo_tasa" id="p_3"> = </p>
-                <input type="text" class="input" value="20'000.000VES" />
-                <div class="buttons_calculadora">
-                <button class="button">Transferir</button>
-                <button class="button">Cancelar</button>
-                </div>
-            </div>
-        </section>
+    <section class="tasas">
+        <div class="tasa">
+            <input type="text" class="input is-outlined" value="COLOMBIA" />
+            <input type="text" class="input is-outlined" value="VENEZUELA" />
+            <h1>0.02</h1>
+            <p class="parrafo_tasa">Por cada 1COP recibiras 200.000VES</p>
+        </div>
+        <div class="calculadora">
+            <p class="parrafo_tasa parrafo_calculadora">Esta calculadora te ayudara a saber cuanto dinero recibiras al
+                cambio.
+            </p>
+            <input type="text" class="input is-outlined input_calculadora" value="100.000COP" />
+            <p class="parrafo_tasa" id="p_3"> = </p>
+            <input type="text" class="input is-outlined input_calculadora" value="20'000.000VES" />
+            <button class="button button_calculadora">Transferir</button>
+            <button class="button button_calculadora">Cancelar</button>
+        </div>
     </section>
     <!--Inicio Seccion Tasas-->
 
     <!--Inicio Seccion Bitcoin-->
-    <section id="Bitcoin">
-        <div class="wrap">
-            <h1 class="title">comercio bitcoin</h1>
-            <div class="box">
-                <div class="left">
-                    <h2>¿Que es Bitcoin?</h2>
-                    <p>
-                        Bitcoin usa tecnología peer-to-peer o entre pares para operar sin una autoridad
-                        central o bancos; la gestión de las transacciones y la emisión de bitcoins es llevada a cabo de
-                        forma colectiva por la red. Bitcoin es de código abierto; su diseño es público, nadie es dueño o
-                        controla Bitcoin y todo el mundo puede participar. Por medio de sus muchas propiedades únicas,
-                        Bitcoin permite usos interesantes no contemplados por ningún sistema de pagos anterior.
-                    </p>
-                </div>
-                <div class="right">
+    <section class="Bitcoin">
+        <h1 class="title">comercio bitcoin</h1>
+        <div class="box">
+            <div class="left">
+                <h2>¿Que es Bitcoin?</h2>
+                <p>
+                    Bitcoin usa tecnología peer-to-peer o entre pares para operar sin una autoridad
+                    central o bancos; la gestión de las transacciones y la emisión de bitcoins es llevada a cabo de
+                    forma colectiva por la red. Bitcoin es de código abierto; su diseño es público, nadie es dueño o
+                    controla Bitcoin y todo el mundo puede participar. Por medio de sus muchas propiedades únicas,
+                    Bitcoin permite usos interesantes no contemplados por ningún sistema de pagos anterior.
+                </p>
+            </div>
+            <div class="right">
+                <div class="right_calculadora">
                     <div class="precio_btc">
-                        <input type="text" value="COLOMBIA" class="input" />
+                        <input type="text" value="COLOMBIA" class="input is-outlined input_calculadora" />
                         <h2>32'543.000cop</h2>
                     </div>
                     <p>¡Que monto deseas comprar?</p>
                     <div class="input_bitcoin">
-                    <input class="input" type="text" value="2'746.000COP">
-                    <input class="input" type="text" value="0.0005687BTC">
+                        <input class="input is-outlined input_calculadora" type="text" value="2'746.000COP">
+                        <input class="input is-outlined input_calculadora" type="text" value="0.0005687BTC">
                     </div>
-                    <button class="button">COMPRAR</button>
+                    <button class="button button_calculadora">COMPRAR</button>
                 </div>
             </div>
         </div>
     </section>
-
     <!--Redes Sociales-->
-    <section class="redes">
-        <div class="wrap">
-            <div class="caja_redes">
-                <div class="tarjetas_redes">
-                    <a href="https://www.instagram.com/bitsendcompany/" target="_blank"><img src="./img/logo_inst.png"
-                            alt="instagram" /></a>
-                </div>
-                <div class="tarjetas_redes">
-                    <a href="https://www.facebook.com/Bitsendcompany/" target="_blank"><img src="./img/logo_face.png"
-                            alt="facebook" /></a>
-                </div>
-                <div class="tarjetas_redes">
-                    <a href="https://t.me/bitsendcompany" target="_blank"><img src="./img/logo_telegram.png"
-                            alt="telegram" /></a>
-                </div>
-                <div class="tarjetas_redes">
-                    <a href="https://wa.me/573143133600?text=Hola%20Necesito%20mas%20informacion,%20Por%20favor."
-                        target="_blank"><img src="./img/logo_whatsapp.png" alt="whatsapp" /></a>
+    <section class="container">
+        <div class="columns columns-redes">
+            <div class="column">
+                <div>
+                    <a href="https://www.instagram.com/bitsendcompany/" target="_blank" class="fab fa-instagram"> </a>
                 </div>
             </div>
-            <div />
+            <div class="column">
+                <div>
+                    <a href="https://www.facebook.com/Bitsendcompany/" target="_blank" class="fab fa-facebook"> </a>
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <a href="https://t.me/bitsendcompany" target="_blank" class="fab fa-telegram"> </a>
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <a href="https://wa.me/573143133600?text=Hola%20Necesito%20mas%20informacion,%20Por%20favor."
+                        target="_blank" class="fab fa-whatsapp"> </a>
+                </div>
+            </div>
+        </div>
     </section>
     <!--Fin redes Sociales-->
 
     <!--Footer-->
     <footer class="footer">
         <section>
-            <div class="wrap">
-                <div id="QR" class="tarjetas_footer">
+                <div class="tarjetas_footer div_qr">
                     <a href="#">BITSENDCOMPANY.COM</a>
                     <img class="qr" src="./img/qr_bitsend.jpeg" alt="">
                 </div>
-                <div id="acerca_de" class="tarjetas_footer">
+                <div class="tarjetas_footer div_acercade">
                     <h2 class="subtitulos_footer">SOPORTE</h2>
                     <ul class="lista_footer">
                         <li><a href="#">Contactanos</a></li>
@@ -129,14 +120,14 @@
                         <li><a href="#">Guia</a></li>
                     </ul>
                 </div>
-                <div id="soporte" class="tarjetas_footer">
+                <div class="tarjetas_footer div_soporte">
                     <h2 class="subtitulos_footer">ACERCA DE</h2>
                     <ul class="lista_footer">
                         <li><a href="#">Nosotros</a></li>
                         <li><a href="#">Horarios</a></li>
                     </ul>
                 </div>
-                <div id="servicios" class="tarjetas_footer">
+                <div class="tarjetas_footer div servicios">
                     <h2 class="subtitulos_footer">SERVICIOS</h2>
                     <ul class="lista_footer">
                         <li><a href="#">Panel</a></li>
@@ -144,7 +135,6 @@
                         <li><a href="#">Bitcoin</a></li>
                     </ul>
                 </div>
-            </div>
         </section>
     </footer>
 </body>

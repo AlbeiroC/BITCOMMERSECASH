@@ -1,4 +1,4 @@
-@import './home.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css';
 
 /* Fuentes */
 @font-face{
@@ -7,14 +7,12 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face{
     font-family: "BebasNeue";
     src: url(fonts/BebasNeue.otf);
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face{
     font-family: "webSymbolsRegular";
     src: url(fonts/websymbols-regular-webfont.eot);
@@ -26,246 +24,117 @@
     font-style: normal;
 }
 
-/*GENERALES*/
-*{
-    margin: 0px;
-    padding: 0px;
+* { margin: 0px; padding: 0px; }
+body{ background-color: #25333D; color: #25333D; font-family: "TrebuchetMS"; font-size: 20px; }
+
+
+/* Enlaces */
+/*
+    Los enlaces visitados ya no estarán en color por default, además de eso
+    la clase .is-link indica que debe tener un color Primario (Verde) al estar en :hover.
+    Puedes ver un ejemplo en index.html
+*/
+a,.is-link{
+    color:#f4f4f4;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 250ms ease-in-out;
 }
+a:hover,.is-link:hover{ color: #02FD17; }
+/* Enlaces */
 
-body{
-    background-color: #25333D;
-    font-family: "TrebuchetMS";
-    font-size: 20px;
+/*
+Listas
+    Agregando la clase .is-list a las listas, podrás organizar sus elementos en linea,
+    los enlaces dentro de cada elemento serán Primario con :hover y si deseas que el orden sea Vertical
+    solo debes anexar la clase .is-block al elemento <ul>
+    Puedes ver un ejemplo en index.html:19
+*/
+ul.is-list{ 
+    list-style: none; 
+    display: inline-flex;
+    text-align: center; 
 }
+ul.is-list > li:first-child{ margin-left: 0px; }
+ul.is-list > li:last-child{ margin-right: 0px; }
+ul.is-list.is-block{ display: block; }
+ul.is-list.is-block > li{ display: block; text-align: left;margin: auto;}
+/* Listas */
 
 
-.wrap{
-    width: 1200px;
-    margin: 0px auto;
-}
-
-.input{
+/* BUTTON & INPUT */
+/*
+    La clase is-outlined elimina es background y deja el borde de color verde.
+    Sin embargo el background aparece al estar en :focus
+    Puedes ver un ejemplo en:
+    index.html:23
+    index.html:34
+*/
+.input,.button,a.button{
     width: 200px;
-    height: 30px;
-    margin: 10px;
-    background-color: transparent ;
-    border: 0.5px solid #02FD17;
     border-radius: 5px;
-    text-align: center;
-    font-size: 15px;
-    color: #02FD17;
-    outline: none;
-    transition: all 300ms;
-}
-
-.button{
-    width: 100px;
-    height: 40px;
-    background-color: #02FD17;
-    color:#25333D;
-    border-radius: 10px;
-    font-family: "BebasNeue";
-    font-size: 15px;
-    border: 1px solid #02FD17;
-}
-
-.button:active{
-    background: linear-gradient( #3c9728, #52C537 );
-    transform: translateY(1px);
-}
-
-.input:hover,
-.input:focus{
-    border: solid 1.5px #02FD17;
-    background-color:#02FD17;
-    color: #25333D;
-}
-
-.input:active{
-    color: #02FD17;
-}
-
-/*CABECERA*/
-#header{
-    width: 100%;
-    height: 100px;
-    color: #FFFFFF;
-}
-
-.logo_bitsend{
-    float: left;
-    width: 35%;
-    margin-top: 10px;
-}
-
-.logo_bitsend h1{
+    border: 0.5px solid #02FD17;
+    line-height: 30px;
     margin: 20px;
-    margin-right: 40px;
-    width: 65%;
-    float: right;
-    font-family: "BebasNeue";
-    font-size: 40px;
-}
-
-.img_logo{
-    width: 80px;
-}
-
-.navegar{
-    float: right;
-    width: 65%;
-}
-
-.navegar ul{
-    width: 79%;
-    float: left;
-    text-align: right;
-}
-
-.navegar ul li{
-    list-style:none;
-    float: right;
-    margin-left: 10px;
-    margin-right: 15px;
-    font-family: "TrebuchetMS", Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    padding: 0px 15px;
     text-align: center;
-    line-height: 100px;
+    font-size: 20px;
+    outline: none;
+    transition: 200ms ease;
 }
+.button, a.button{ font-family: "BebasNeue"; cursor: pointer;}
+.button:active,a.button:active{transform: translateY(1px);}
+.input:not(.is-outlined),
+.input.is-outlined:focus,
+.button:not(.is-outlined),
+.button.is-outlined:hover,
+a.button:not(.is-outlined),
+a.button.is-outlined:hover
+{ color: #25333D; background: #02FD17; }
+.input.is-outlined,
+.button.is-outlined,
+a.button.is-outlined
+{ color: #02FD17; background: transparent; }
+/* BUTTON & INPUT */
 
-.navegar ul li a{
-    text-decoration: none;
-    color: #FFFFFF;
-    transition: all 300ms;
+
+
+/* Color de Texto */
+/*
+    Las clases indicadas aqui cambiarán el color del texto según corresponda.
+    Puedes ver un ejemplo en index.html:86
+*/
+.is-text-primary{ color:#02FD17; }
+.is-text-white{ color:#f4f4f4; }
+.is-text-dark{ color:#25333D; }
+.is-text-error{ color:#a01300; }
+/* Color de Texto */
+
+
+/* Contenedor */
+/*  El contenedor lo usarás para escribir nuevas secciones de contenido.
+    Puedes ver un ejemplo en index.html:86
+*/
+.container{
+    width: calc(100% - 380px);
+    padding: 0px 190px;
 }
+/* Contenedor */
 
-.button_login{
-    float: left;
-    width: 5%;
-    text-align: right;
-    line-height: 100px;
-}
 
-.login{
-    color: #02FD17;    
-    text-decoration: none;
-    font-size: 25px;
-    font-family: "BebasNeue";
-}
-
-#button_register{
-    float: left;
-    margin: 10px;
-    margin-top: 30px;
-    font-size: 25px;
-}
-
-/*REDES SOCIALES*/
-.redes{
-    width: 100%;
-    height: 150px;
-}
-
-.redes .wrap{
-    height: 150px;
+/* columnas */
+/*
+    Las columnas son una lista de clases que podrás utilizar para alinear contenido horizontal
+    solo debes crear el padre llamado .columns y luego los hijos los llamarás .column
+    Puedes ver un ejemplo en index.html:87
+*/
+.columns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     border-bottom: 1px solid #02FD17;
 }
-
-.tarjetas_redes{
-    float: left;
-    overflow: hidden;
-    width: 21%;
-    height: 100px;
-    margin:20px;
-    text-align: center;
-}
-
-.redes img{
-    width: 50px;
-    margin-top: 30px;
-    transition: all 300ms;
-}
-
-.redes img:hover{
-    box-shadow: 0 0 30px #02FD17;
-    border-radius: 30px;
-}
-
-/*FOOTER*/
-.footer{
-    width: 100%;
-    height: 300px;
-    color: #FFFFFF;
-}
-
-.tarjetas_footer{
-    float: right;
-    width: 15%;
-    height: 200px;
-    padding: 20px;
-    margin: 10px;
-    margin-top: 30px;
-    letter-spacing: 2px;
-    text-align: center;
-    overflow: hidden;
-    
-}
-
-.subtitulos_footer{
-    width: 100%;
-    font-family: "TrebuchetMS";
-    font-size: 20px;
-    list-style:none;
-}
-
-#QR{
-    float: left;
-    width: 30%;
-}
-
-#QR a{
-    float: left;
-    margin-left: -20px;
-    font-family: "BebasNeue";
-    font-size: 40px;
-    text-decoration: none;
-    color: #FFFFFF;
-    transition: all 300ms;
-}
-
-#QR a:hover{
-    color: #02FD17;
-}
-
-.qr{
-    display: block;
-    width: 150px;
-    margin-top: 40px;
-    margin-left: -20px;
-}
-
-.lista_footer{
-    margin-top: 20px;
-    list-style:none;
-}
-
-.lista_footer li{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.lista_footer a{
-    font-family: "TrebuchetMS";
-    font-size: 15px;
-    text-decoration: none;
-    color: #FFFFFF;
-    transition: all 300ms;
-}
-
-.lista_footer a:hover,
-.navegar a:hover{
-    color: #02FD17;
-}
+/* columnas */
 
 
 
